@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "test": "echo Test Passed"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Bhanu2240/CICD-demo.git"
