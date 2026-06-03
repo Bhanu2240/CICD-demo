@@ -1,0 +1,19 @@
+name: Node.js CI
+on:
+  push:
+    branches: 
+      - main
+jobs:
+  build:
+    runs-on:ubuntu-latest
+    steps:
+      -name: checkout code
+       uses:actions/checkout@v4
+      -name: setup node
+        uses:actions/setup-node@v3
+        with:
+          node-version:16
+      -name:install dependencies
+       run:npm install
+       -name: run tests
+        run:npm test
